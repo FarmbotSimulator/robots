@@ -1,0 +1,13 @@
+#
+# Bunkspeed OBJ Material File
+# http://www.bunkspeed.com
+#
+
+newmtl unfinished_mahogany_2d
+Kd 1 1 1
+map_Kd albedo.jpg
+Ks 0.5 0.5 0.5
+map_bump -bm 2 mahogany_n.dds
+bump mahogany_n.dds
+illum 2
+Ns 99.90109

@@ -1,0 +1,10 @@
+#
+# Bunkspeed OBJ Material File
+# http://www.bunkspeed.com
+#
+
+newmtl matte_steel
+Kd 0.6509804 0.6196079 0.5882353
+Ks 0.6509804 0.6196079 0.5882353
+illum 2
+Ns 1.486486

@@ -1,0 +1,56 @@
+{
+    "genesis v1.0":{
+        "type": "scene",
+        "data": "/robots/genesis v1.0/genesis v1.0.x3d"
+    },
+    "4_wheels_robot":{
+        "type": "scene",
+        "data": "/robots/4_wheels_robot/4_wheels_robot.x3d"
+    },
+    "2wsingleunit-1":{
+        "type": "scene",
+        "data": "/robots/2wsingleunit-1/2wsingleunit-1.x3d"
+    },
+    "boomer":{
+        "type": "scene",
+        "data": "/robots/boomer/boomer.x3d"
+    },
+    "boomer_1":{
+        "type": "scene",
+        "data": "/robots/boomer_1/boomer_1.x3d"
+    },
+    "4wd":{
+        "type": "scene",
+        "data": "/robots/4_wheels_robot/4_wheels_robot.x3d"
+    },
+    "gantry":{
+        "type": "scene",
+        "data": "/robots/gantry/gantry.x3d"
+    },
+    "stl":{
+        "type": "scene",
+        "data": "/robots/stl/stl.x3d"
+    },
+    "Farmbot Mega": {
+        "type":"live",
+        "data": "/robots/4_wheels_robot.x3d"
+    },
+    "Tutorial4-1": {
+        "type":"animation",
+        "data": "/robots/Tutorial4-1/Tutorial4-1.x3d"
+    },
+    "farmbotSimulator_1": {
+        "type":"animation",
+        "data": "/robots/farmbotSimulator_1/farmbotSimulator_1.x3d"
+    },
+    
+    "clouded": {
+        "type": "live",
+        "url": "https://github.com/BenjaminDeleze/sandbox/blob/master/or-nao/worlds/nao_room_streaming.wbt",
+        "server":"http://webots.cseco.co.ke:1999"
+    },
+    "ure":{
+        "type": "scene",
+        "data": "/robots/ure/ure.x3d"
+    }
+}

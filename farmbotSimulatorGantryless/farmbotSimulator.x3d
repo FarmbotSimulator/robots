@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+    <head>
+        <meta name="generator" content="Webots" />
+        <meta name="version" content="R2022b" />
+    </head>
+    <Scene>
+        <WorldInfo id='n2' docUrl='https://cyberbotics.com/doc/reference/worldinfo' title="Brian Mechanism Robot" info='"Simulation of Agricultural Robots" "This simulator enables you to test your farmbot sequences before deploying them to the real robot. It also has models of other robots which are designed to be an improvement of farmbot. " "Author: Brian Onang&#39;o&lt;brian@cseco.co.ke&gt;"' basicTimeStep='32' coordinateSystem='ENU' window='bm2w2'></WorldInfo>
+        <Viewpoint id='n3' docUrl='https://cyberbotics.com/doc/reference/viewpoint' fieldOfView='0.7' orientation='0.08520372 -0.031642906 -0.99586093 3.850075' position='3.3338995 -7.7087855 1.5194057' exposure='1' bloomThreshold='21' zNear='0.05' zFar='0' followSmoothness='0.5' ambientOcclusionRadius='2'></Viewpoint>
+        <Background id='n4' docUrl='https://cyberbotics.com/doc/guide/object-backgrounds' rightUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_right.jpg"' rightIrradianceUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_right.hdr"' leftUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_left.jpg"' leftIrradianceUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_left.hdr"' topUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_top.jpg"' topIrradianceUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_top.hdr"' bottomUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_bottom.jpg"' bottomIrradianceUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_bottom.hdr"' frontUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_front.jpg"' frontIrradianceUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_front.hdr"' backUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_back.jpg"' backIrradianceUrl='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/default/worlds/textures/cubic/noon_cloudy_countryside_back.hdr"'></Background>
+        <DirectionalLight id='n5' docUrl='https://cyberbotics.com/doc/guide/object-backgrounds' ambientIntensity='1' color='0.95 0.95 1' direction='-0.1 -0.3 -1' intensity='3' castShadows='TRUE'></DirectionalLight>
+        <Transform id='n21' docUrl='https://cyberbotics.com/doc/guide/object-floors' translation='0 0 -0.01' name='field' type='solid'>
+            <Shape id='n23' castShadows='true'>
+                <PBRAppearance id='n32' docUrl='https://cyberbotics.com/doc/reference/pbrappearance' roughness='1' metalness='0'>
+                    <ImageTexture id='n33' docUrl='https://cyberbotics.com/doc/reference/imagetexture' url='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/grass/grass_maintained_base_color.jpg"' isTransparent='false' role='baseColor'></ImageTexture>
+                    <ImageTexture id='n34' docUrl='https://cyberbotics.com/doc/reference/imagetexture' url='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/grass/grass_maintained_normal.jpg"' isTransparent='false' role='normal'></ImageTexture>
+                    <ImageTexture id='n35' docUrl='https://cyberbotics.com/doc/reference/imagetexture' url='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/grass/grass_maintained_occlusion.jpg"' isTransparent='false' role='occlusion'></ImageTexture>
+                </PBRAppearance>
+                <IndexedFaceSet id='n28' coordIndex='0 1 2 -1 1 0 3 -1' normalIndex='0 0 0 -1 0 0 0 -1' texCoordIndex='0 1 2 -1 1 0 3 -1'>
+                    <Coordinate point='25.0000 -25.0000 0.0000, -25.0000 25.0000 0.0000, -25.0000 -25.0000 0.0000, 25.0000 25.0000 0.0000'></Coordinate>
+                    <Normal vector='0.0000 0.0000 1.0000'></Normal>
+                    <TextureCoordinate point='25.0000 0.0000, 0.0000 25.0000, 0.0000 0.0000, 25.0000 25.0000'></TextureCoordinate>
+                </IndexedFaceSet>
+            </Shape>
+            <Plane id='n31' docUrl='https://cyberbotics.com/doc/reference/plane' size='50 50'></Plane>
+        </Transform>
+        <Transform id='n36' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-500 0 0' scale='0.001 0.001 0.001'>
+            <Transform id='n37' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                <CadShape id='n38' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/v-slot_20x40.obj" "meshes/v-slot_20x40.mtl"'></CadShape>
+            </Transform>
+        </Transform>
+        <Transform id='n39' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-5 0 0' rotation='1 0 0 1.5707'>
+            <CadShape id='n40' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n38' />
+        </Transform>
+        <Transform id='n41' docUrl='https://cyberbotics.com/doc/reference/transform'>
+            <Transform id='n42' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                <Transform id='n43' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-500 0 0' scale='0.001 0.001 0.001'>
+                    <Transform id='n44' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                        <Shape id='n45' castShadows='true'>
+                            <PBRAppearance id='n46' docUrl='https://cyberbotics.com/doc/reference/pbrappearance' metalness='0'>
+                                <ImageTexture id='n47' docUrl='https://cyberbotics.com/doc/reference/imagetexture' url='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/osb_wood/osb_wood_base_color.jpg"' isTransparent='false' role='baseColor'></ImageTexture>
+                                <ImageTexture id='n48' docUrl='https://cyberbotics.com/doc/reference/imagetexture' url='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/osb_wood/osb_wood_roughness.jpg"' isTransparent='false' role='roughness'></ImageTexture>
+                                <ImageTexture id='n49' docUrl='https://cyberbotics.com/doc/reference/imagetexture' url='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/osb_wood/osb_wood_normal.jpg"' isTransparent='false' role='normal'></ImageTexture>
+                            </PBRAppearance>
+                            <Box id='n50' docUrl='https://cyberbotics.com/doc/reference/box' size='1 1 1'></Box>
+                        </Shape>
+                    </Transform>
+                    <Transform id='n51' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 0 -0.05' rotation='0 0 1 -3.1411853'>
+                        <CadShape id='n52' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/concretefoot.obj" "meshes/concretefoot.mtl"'></CadShape>
+                        <Transform id='n53' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.03 0 0.34'>
+                            <CadShape id='n54' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/TracksJoiningPlate.obj" "meshes/TracksJoiningPlate.mtl"'></CadShape>
+                        </Transform>
+                    </Transform>
+                    <Transform id='n55' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 0 1 1.5707'>
+                        <Transform id='n56' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 0 0.1' rotation='1 0 0 1.5707'>
+                            <CadShape id='n57' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/DragChainSupportBracket.obj" "meshes/DragChainSupportBracket.mtl"'></CadShape>
+                        </Transform>
+                    </Transform>
+                    <Transform id='n58' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-5 0 0' rotation='1 0 0 1.5707'>
+                        <CadShape id='n59' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n38' />
+                    </Transform>
+                    <Transform id='n60' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                        <CadShape id='n61' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/corn.obj" "meshes/10439_Corn_Field_v1_max2010_it2.mtl"'></CadShape>
+                    </Transform>
+                    <Transform id='n62' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                        <CadShape id='n63' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/12973_anemone_flower_v1_l2.obj" "meshes/12973_anemone_flower_v1_l2.mtl"'></CadShape>
+                    </Transform>
+                </Transform>
+                <Transform id='n64' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 0 -10000'>
+                    <Transform id='n65' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                        <Shape id='n66' castShadows='true'>
+                            <PBRAppearance id='n67' docUrl='https://cyberbotics.com/doc/reference/pbrappearance' roughness='0.8' metalness='0'>
+                                <ImageTexture id='n68' docUrl='https://cyberbotics.com/doc/reference/imagetexture' url='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/dry_mud/dry_mud_base_color.jpg"' isTransparent='false' role='baseColor'></ImageTexture>
+                                <ImageTexture id='n69' docUrl='https://cyberbotics.com/doc/reference/imagetexture' url='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/dry_mud/dry_mud_normal.jpg"' isTransparent='false' role='normal'></ImageTexture>
+                                <ImageTexture id='n70' docUrl='https://cyberbotics.com/doc/reference/imagetexture' url='"https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/textures/dry_mud/dry_mud_occlusion.jpg"' isTransparent='false' role='occlusion'></ImageTexture>
+                            </PBRAppearance>
+                            <Plane id='n71' docUrl='https://cyberbotics.com/doc/reference/plane' size='1 1'></Plane>
+                        </Shape>
+                    </Transform>
+                    <Transform id='n72' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                        <Transform id='n73' docUrl='https://cyberbotics.com/doc/reference/transform' scale='0.0001 0.0001 0.0001'>
+                            <CadShape id='n74' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/corn.obj" "meshes/10439_Corn_Field_v1_max2010_it2.mtl"'></CadShape>
+                        </Transform>
+                        <Transform id='n75' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                            <Transform id='n76' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 0 0.221' rotation='0 0 1 -3.1411853'>
+                                <Transform id='n77' docUrl='https://cyberbotics.com/doc/reference/transform' translation='1.5 0 0'>
+                                    <Transform id='n78' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.01 -0.013 0.09' rotation='0 1 0 -3.1411853'>
+                                        <CadShape id='n79' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/v-slot_20x60_650mm.obj" "meshes/v-slot_20x60_650mm.mtl"'></CadShape>
+                                    </Transform>
+                                    <Transform id='n80' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.004 -0.06 0' rotation='0 0 1 -3.1411853'>
+                                        <Group id='n81' docUrl='https://cyberbotics.com/doc/reference/group'>
+                                            <Transform id='n82' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.01 0.1' rotation='0 0 1 -3.1411853'>
+                                                <CadShape id='n83' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/m5ScrewwithTeeNut.obj" "meshes/m5ScrewwithTeeNut.mtl"'></CadShape>
+                                            </Transform>
+                                            <Transform id='n84' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.03 0.1' rotation='0 0 1 -3.1411853'>
+                                                <CadShape id='n85' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n83' />
+                                            </Transform>
+                                            <Transform id='n86' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.05 0.1' rotation='0 0 1 -3.1411853'>
+                                                <CadShape id='n87' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n83' />
+                                            </Transform>
+                                            <Transform id='n88' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.01 0.12' rotation='0 0 1 -3.1411853'>
+                                                <CadShape id='n89' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                            </Transform>
+                                            <Transform id='n90' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.03 0.12' rotation='0 0 1 -3.1411853'>
+                                                <CadShape id='n91' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                            </Transform>
+                                            <Transform id='n92' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.05 0.12' rotation='0 0 1 -3.1411853'>
+                                                <CadShape id='n93' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                            </Transform>
+                                            <Transform id='n94' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.01 0.14' rotation='0 0 1 -3.1411853'>
+                                                <CadShape id='n95' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                            </Transform>
+                                            <Transform id='n96' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.03 0.14' rotation='0 0 1 -3.1411853'>
+                                                <CadShape id='n97' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                            </Transform>
+                                            <Transform id='n98' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.05 0.14' rotation='0 0 1 -3.1411853'>
+                                                <CadShape id='n99' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                            </Transform>
+                                        </Group>
+                                    </Transform>
+                                    <Transform id='n100' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.025 -0.02 -0.0135' rotation='0 1 0 1.5707'>
+                                        <Transform id='n101' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 1 0 -3.1411853'>
+                                            <CadShape id='n102' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/DelrinWheelAssy.obj" "meshes/DelrinWheelAssy.mtl"'></CadShape>
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n103' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.025 -0.06 -0.0135' rotation='0 1 0 1.5707'>
+                                        <Transform id='n104' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 1 0 -3.1411853'>
+                                            <CadShape id='n105' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102' />
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n106' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.025 -0.1 -0.0135' rotation='0 1 0 1.5707'>
+                                        <Transform id='n107' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 1 0 -3.1411853'>
+                                            <CadShape id='n108' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102' />
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n109' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.025 -0.14 -0.0135' rotation='0 1 0 1.5707'>
+                                        <Transform id='n110' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 1 0 -3.1411853'>
+                                            <CadShape id='n111' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102' />
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n112' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.025 0 0.046' rotation='0 1 0 1.5707'>
+                                        <Transform id='n113' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 1 0 -3.1411853'>
+                                            <CadShape id='n114' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102' />
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n115' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.025 -0.04 0.046' rotation='0 1 0 1.5707'>
+                                        <Transform id='n116' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 1 0 -3.1411853'>
+                                            <CadShape id='n117' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102' />
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n118' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.025 -0.08 0.046' rotation='0 1 0 1.5707'>
+                                        <Transform id='n119' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 1 0 -3.1411853'>
+                                            <CadShape id='n120' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102' />
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n121' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.025 -0.12 0.046' rotation='0 1 0 1.5707'>
+                                        <Transform id='n122' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 1 0 -3.1411853'>
+                                            <CadShape id='n123' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102' />
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n124' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.025 -0.16 0.046' rotation='0 1 0 1.5707'>
+                                        <Transform id='n125' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 1 0 -3.1411853'>
+                                            <CadShape id='n126' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102' />
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n127' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 1 0 1.5707'>
+                                        <Transform id='n128' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n129' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/GantryPlate.obj" "meshes/GantryPlate.mtl"'></CadShape>
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n130' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.012 -0.132 0.067' rotation='0 0 1 -3.1411853'>
+                                        <Transform id='n131' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.01 -0.064 0.6' rotation='1 0 0 1.5707'>
+                                            <CadShape id='n132' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/GantryCornerPlate.obj" "meshes/GantryCornerPlate.mtl"'></CadShape>
+                                        </Transform>
+                                        <Transform id='n133' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 0.145 0.72' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n134' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                        <Transform id='n135' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.02 0.145 0.72' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n136' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n134' />
+                                        </Transform>
+                                        <Transform id='n137' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.04 0.145 0.72' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n138' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n134' />
+                                        </Transform>
+                                        <Transform id='n139' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.06 0.145 0.72' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n140' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n134' />
+                                        </Transform>
+                                        <Transform id='n141' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 0.145 0.7' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n142' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n134' />
+                                        </Transform>
+                                        <Transform id='n143' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.02 0.145 0.7' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n144' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n134' />
+                                        </Transform>
+                                        <Transform id='n145' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.04 0.145 0.7' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n146' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n134' />
+                                        </Transform>
+                                        <Transform id='n147' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.06 0.145 0.7' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n148' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n134' />
+                                        </Transform>
+                                        <Transform id='n149' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 -0.277 0.67' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n150' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n134' />
+                                        </Transform>
+                                        <Transform id='n151' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 -0.277 0.65' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n152' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n134' />
+                                        </Transform>
+                                        <Transform id='n153' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 -0.277 0.63' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n154' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n134' />
+                                        </Transform>
+                                        <Transform id='n155' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 -0.277 0.61' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n156' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n134' />
+                                        </Transform>
+                                    </Transform>
+                                </Transform>
+                                <Transform id='n157' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-1.5 0 0'>
+                                    <Transform id='n158' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.01 -0.013 0.09' rotation='0 1 0 -3.1411853'>
+                                        <Transform id='n159' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                                            <CadShape id='n160' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/v-slot_20x60_650mm.obj" "meshes/v-slot_20x60_650mm.mtl"'></CadShape>
+                                        </Transform>
+                                    </Transform>
+                                    <Group id='n161' docUrl='https://cyberbotics.com/doc/reference/group'>
+                                        <Transform id='n162' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.01 0.1' rotation='0 0 1 -3.1411853'>
+                                            <CadShape id='n163' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                        <Transform id='n164' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.03 0.1' rotation='0 0 1 -3.1411853'>
+                                            <CadShape id='n165' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n163' />
+                                        </Transform>
+                                        <Transform id='n166' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.05 0.1' rotation='0 0 1 -3.1411853'>
+                                            <CadShape id='n167' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n163' />
+                                        </Transform>
+                                        <Transform id='n168' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.01 0.12' rotation='0 0 1 -3.1411853'>
+                                            <CadShape id='n169' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                        <Transform id='n170' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.03 0.12' rotation='0 0 1 -3.1411853'>
+                                            <CadShape id='n171' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                        <Transform id='n172' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.05 0.12' rotation='0 0 1 -3.1411853'>
+                                            <CadShape id='n173' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                        <Transform id='n174' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.01 0.14' rotation='0 0 1 -3.1411853'>
+                                            <CadShape id='n175' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                        <Transform id='n176' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.03 0.14' rotation='0 0 1 -3.1411853'>
+                                            <CadShape id='n177' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                        <Transform id='n178' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.209 -0.05 0.14' rotation='0 0 1 -3.1411853'>
+                                            <CadShape id='n179' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                    </Group>
+                                    <Transform id='n180' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.03 -0.02 0.035' rotation='0 1 0 1.5707'>
+                                        <CadShape id='n181' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                    </Transform>
+                                    <Transform id='n182' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.03 -0.06 0.035' rotation='0 1 0 1.5707'>
+                                        <CadShape id='n183' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n181' />
+                                    </Transform>
+                                    <Transform id='n184' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.03 -0.1 0.035' rotation='0 1 0 1.5707'>
+                                        <CadShape id='n185' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n181' />
+                                    </Transform>
+                                    <Transform id='n186' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.03 -0.14 0.035' rotation='0 1 0 1.5707'>
+                                        <CadShape id='n187' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n181' />
+                                    </Transform>
+                                    <Transform id='n188' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.03 0 0.093' rotation='0 1 0 1.5707'>
+                                        <CadShape id='n189' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n181' />
+                                    </Transform>
+                                    <Transform id='n190' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.03 -0.04 0.093' rotation='0 1 0 1.5707'>
+                                        <CadShape id='n191' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n181' />
+                                    </Transform>
+                                    <Transform id='n192' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.03 -0.08 0.093' rotation='0 1 0 1.5707'>
+                                        <CadShape id='n193' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n181' />
+                                    </Transform>
+                                    <Transform id='n194' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.03 -0.12 0.093' rotation='0 1 0 1.5707'>
+                                        <CadShape id='n195' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n181' />
+                                    </Transform>
+                                    <Transform id='n196' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.03 -0.16 0.093' rotation='0 1 0 1.5707'>
+                                        <CadShape id='n197' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n181' />
+                                    </Transform>
+                                    <Transform id='n198' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 1 0 1.5707'>
+                                        <Transform id='n199' docUrl='https://cyberbotics.com/doc/reference/transform' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n200' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/GantryPlate.obj" "meshes/GantryPlate.mtl"'></CadShape>
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n201' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.011 0.001 0.06'>
+                                        <Transform id='n202' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.01 -0.064 0.6' rotation='1 0 0 1.5707'>
+                                            <CadShape id='n203' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n132' />
+                                        </Transform>
+                                        <Transform id='n204' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 -0.278 0.721' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n205' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n179' />
+                                        </Transform>
+                                        <Transform id='n206' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.019 -0.278 0.721' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n207' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n179' />
+                                        </Transform>
+                                        <Transform id='n208' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.039 -0.278 0.721' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n209' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n179' />
+                                        </Transform>
+                                        <Transform id='n210' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.059 -0.278 0.721' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n211' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n179' />
+                                        </Transform>
+                                        <Transform id='n212' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 -0.278 0.701' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n213' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n179' />
+                                        </Transform>
+                                        <Transform id='n214' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.019 -0.278 0.701' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n215' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n179' />
+                                        </Transform>
+                                        <Transform id='n216' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.039 -0.278 0.701' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n217' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n179' />
+                                        </Transform>
+                                        <Transform id='n218' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.059 -0.278 0.701' rotation='0 0 1 -1.5707'>
+                                            <CadShape id='n219' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n179' />
+                                        </Transform>
+                                        <Transform id='n220' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 0.145 0.67' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n221' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                        <Transform id='n222' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 0.145 0.65' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n223' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                        <Transform id='n224' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 0.145 0.63' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n225' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                        <Transform id='n226' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 0.145 0.61' rotation='0 0 1 1.5707'>
+                                            <CadShape id='n227' docUrl='https://cyberbotics.com/doc/reference/cadshape'  USE='n83'></CadShape>
+                                        </Transform>
+                                    </Transform>
+                                </Transform>
+                                <Transform id='n228' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                                    <Transform id='n229' docUrl='https://cyberbotics.com/doc/reference/transform' translation='1.5 0.001 0.8' rotation='0 1 0 1.5707' scale='1 1 4.65'>
+                                        <Transform id='n230' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 -0.079 0' rotation='0 0 1 1.5707'>
+                                            <Transform id='n231' docUrl='https://cyberbotics.com/doc/reference/transform' USE='n159' />
+                                        </Transform>
+                                    </Transform>
+                                    <Transform id='n233' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 -0.091 0.729' rotation='0 1 0 -1.5707'>
+                                        <Transform id='n234' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                                            <Transform id='n235' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0 0 0.1' rotation='0 0 1 -1.5707'>
+                                                <CadShape id='n236' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/crossSlidePlate.obj" "meshes/crossSlidePlate.mtl"'></CadShape>
+                                                <Transform id='n237' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.0296 0.0993 -0.0514' rotation='0 1 0 1.5707'>
+                                                    <CadShape id='n238' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                                <Transform id='n239' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.0296 0.0993 0.0092' rotation='0 1 0 1.5707'>
+                                                    <CadShape id='n240' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                                <Transform id='n241' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.0296 0.0993 0.038' rotation='0 1 0 1.5707'>
+                                                    <CadShape id='n242' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                                <Transform id='n243' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.0296 0.0993 0.098' rotation='0 1 0 1.5707'>
+                                                    <CadShape id='n244' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                                <Transform id='n245' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.0296 0.019 0.098' rotation='0 1 0 1.5707'>
+                                                    <CadShape id='n246' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                                <Transform id='n247' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.0296 0.02 0.023' rotation='0 1 0 1.5707'>
+                                                    <CadShape id='n248' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                                <Transform id='n249' docUrl='https://cyberbotics.com/doc/reference/transform' translation='0.0296 0.02 -0.0526' rotation='0 1 0 1.5707'>
+                                                    <CadShape id='n250' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                                <Transform id='n251' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.0246 0.02 -0.0413' rotation='0 1 0 -1.5707'>
+                                                    <CadShape id='n252' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                                <Transform id='n253' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.0246 0.1237 -0.0395' rotation='0 1 0 -1.5707'>
+                                                    <CadShape id='n254' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                                <Transform id='n255' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.0246 0.1206 -0.0788' rotation='0 1 0 -1.5707'>
+                                                    <CadShape id='n256' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                                <Transform id='n257' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.0246 0.019 -0.0788' rotation='0 1 0 -1.5707'>
+                                                    <CadShape id='n258' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                                <Transform id='n259' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.0246 0.149 -0.0788' rotation='0 1 0 -1.5707'>
+                                                    <CadShape id='n260' docUrl='https://cyberbotics.com/doc/reference/cadshape' USE='n102'></CadShape>
+                                                </Transform>
+                                            </Transform>
+                                            <Transform id='n261' docUrl='https://cyberbotics.com/doc/reference/transform'>
+                                                <Transform id='n262' docUrl='https://cyberbotics.com/doc/reference/transform' translation='-0.1 -0.017 0.064' rotation='0 1 0 -1.5705'>
+                                                    <CadShape id='n263' docUrl='https://cyberbotics.com/doc/reference/cadshape' url='"meshes/v-slot_20x20_1000mm.obj" "meshes/v-slot_20x20_1000mm.mtl"'></CadShape>
+                                                </Transform>
+                                            </Transform>
+                                        </Transform>
+                                    </Transform>
+                                </Transform>
+                            </Transform>
+                        </Transform>
+                    </Transform>
+                </Transform>
+            </Transform>
+        </Transform>
+    </Scene>
+</X3D>

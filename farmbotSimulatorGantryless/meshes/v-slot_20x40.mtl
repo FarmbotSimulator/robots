@@ -1,0 +1,10 @@
+#
+# Bunkspeed OBJ Material File
+# http://www.bunkspeed.com
+#
+
+newmtl satin_finish_aluminum
+Kd 0.2509804 0.2509804 0.2509804
+Ks 0.2509804 0.2509804 0.2509804
+illum 2
+Ns 3.414634
